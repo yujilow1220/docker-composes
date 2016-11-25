@@ -1,0 +1,9 @@
+subsonic:
+  image: yujilow1220/subsonic
+  extra_hosts:
+   - "subsonic.org:127.0.0.1"
+  ports:
+   - "4040:4040"
+  volumes:
+   - ~/Music:/musics:ro
+   - ./data:/data
